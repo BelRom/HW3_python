@@ -1,5 +1,6 @@
+import numpy as np
 
 def nampy_random_agent(observation, configuration):
-    import numpy as np
-    result = np.random.randint(1, 3) - 1
+    result = np.random.randint(0, configuration.signs)
+    print(f"nampy_random_agent result {result}")
     return result

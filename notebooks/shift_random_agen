@@ -1,0 +1,7 @@
+import random
+
+def shift_random_agent(observation, configuration):
+    if observation.step == 0:
+        return 0
+    else:
+        return (observation.lastOpponentAction + random.randrange(0, 100)) % 2

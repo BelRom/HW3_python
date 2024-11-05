@@ -1,4 +1,5 @@
 
+import random
+
 def random_agent(observation, configuration):
-    import random
-    return random.randrange(0,2)
+    return random.randrange(0, configuration.signs)
